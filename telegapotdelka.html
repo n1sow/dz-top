@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Талагрум</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('https://media.istockphoto.com/id/1346734927/ru/%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F/%D1%85%D0%B0%D0%BA%D0%B5%D1%80%D1%8B-%D0%B8-%D0%BA%D0%B8%D0%B1%D0%B5%D1%80%D0%BF%D1%80%D0%B5%D1%81%D1%82%D1%83%D0%BF%D0%BD%D0%B8%D0%BA%D0%B8-%D1%84%D0%B8%D1%88%D0%B8%D0%BD%D0%B3%D0%BE%D0%BC-%D0%BA%D1%80%D0%B0%D0%B4%D1%83%D1%82-%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5-%D0%BB%D0%BE%D0%B3%D0%B8%D0%BD-%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F-%D0%BF%D0%B0%D1%80%D0%BE%D0%BB%D1%8C.jpg?s=2048x2048&w=is&k=20&c=k5VGb4sF7oShqX0s5XvDHLeyAQPo2j_XZ7YvRWAtCQc='); 
+            background-size: cover;
+            background-position: center;
+            color: #fff; 
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        p {
+            color: #fff;
+            margin: 20px 0;
+        }
+
+        .registration-container {
+            float: left;
+            width: 30%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .registration-container:hover {
+            transform: scale(1.05);
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        section {
+            margin-left: 35%;
+            padding: 20px;
+        }
+
+        footer {
+            clear: both;
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Талагрум</h1>
+    </header>
+
+    <div class="registration-container">
+        <h2>Регистрация</h2>
+        <form action="second_page.html">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+
+    <section>
+        <p>Добро пожаловать на сайт "Талагрум"!</p>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Талагрум. Все права защищены.</p>
+    </footer>
+</body>
+</html>
